@@ -14,13 +14,11 @@ app.use(express.json({extended: false}))
 
 app.use(cors())
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "client/build")))
+app.use(express.static(path.join(__dirname, "client/build")))
 
-  app.get("/", function (req, res) {
-    res.sendFile(path.join(__dirname, "client/build", "index.html"))
-  })
-}
+app.get("/", function (req, res) {
+  res.sendFile(path.join(__dirname, "client/build", "index.html"))
+})
 
 //Routes
 app.use("/api/user", require("./routes/api/user"))
