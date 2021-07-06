@@ -1,0 +1,4 @@
+export const  START_FETCH_DATA = "START_FETCH_DATA"
+export const  SUCCESS_FETCH_DATA = "SUCCESS_FETCH_DATA "
+export const  FAIL_FETCH_DATA = "FAIL_FETCH_DATA "
+export const SET_DATA = "SET_DATA"

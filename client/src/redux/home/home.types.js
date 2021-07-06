@@ -1,0 +1,1 @@
+export const SET_HOMEDATA = "SET_HOMEDATA"
